@@ -1,0 +1,101 @@
+id,location,score1,score2
+1,Washington DC,77,86
+2,Washington DC,39,56
+3,Washington DC,57,64
+4,Washington DC,63,94
+5,Washington DC,58,76
+6,Washington DC,48,55
+7,Washington DC,80,100
+8,Washington DC,48,70
+9,Washington DC,90,100
+10,Washington DC,49,61
+11,Washington DC,76,100
+12,Washington DC,96,100
+13,Washington DC,22,31
+14,Washington DC,44,37
+15,Washington DC,47,74
+16,Washington DC,63,77
+17,Washington DC,44,59
+18,Washington DC,0,21
+19,Washington DC,1,24
+20,Washington DC,76,97
+21,New-York,27,66
+22,New-York,12,50
+23,New-York,28,59
+24,New-York,42,52
+25,New-York,49,85
+26,New-York,26,55
+27,New-York,27,56
+28,New-York,12,28
+29,New-York,35,60
+30,New-York,24,58
+31,New-York,35,78
+32,New-York,37,66
+33,New-York,40,74
+34,New-York,24,53
+35,New-York,35,51
+36,New-York,13,39
+37,New-York,22,48
+38,New-York,21,51
+39,New-York,6,47
+40,New-York,30,68
+41,New-York,32,60
+42,New-York,26,54
+43,New-York,38,75
+44,New-York,23,58
+45,New-York,16,39
+46,New-York,34,57
+47,New-York,22,56
+48,New-York,44,82
+49,New-York,26,55
+50,New-York,37,75
+51,New-York,33,67
+52,New-York,22,46
+53,New-York,46,79
+54,New-York,36,55
+55,New-York,31,75
+56,New-York,33,83
+57,New-York,37,63
+58,New-York,31,50
+59,New-York,0,36
+60,New-York,33,61
+61,Baltimore,23,99
+62,Baltimore,34,73
+63,Baltimore,42,92
+64,Baltimore,58,98
+65,Baltimore,15,44
+66,Baltimore,56,99
+67,Baltimore,37,50
+68,Baltimore,51,100
+69,Baltimore,48,91
+70,Baltimore,44,100
+71,Philadelphia,49,34
+72,Philadelphia,68,41
+73,Philadelphia,82,69
+74,Philadelphia,51,22
+75,Philadelphia,59,27
+76,Philadelphia,82,65
+77,Philadelphia,85,61
+78,Philadelphia,79,59
+79,Philadelphia,52,33
+80,Philadelphia,48,22
+81,Philadelphia,100,75
+82,Philadelphia,75,54
+83,Philadelphia,72,64
+84,Philadelphia,68,32
+85,Philadelphia,46,32
+86,Philadelphia,82,66
+87,Philadelphia,66,56
+88,Philadelphia,66,43
+89,Philadelphia,89,72
+90,Philadelphia,86,69
+91,Philadelphia,98,72
+92,Philadelphia,60,53
+93,Philadelphia,83,75
+94,Philadelphia,98,85
+95,Philadelphia,48,44
+96,Philadelphia,53,38
+97,Philadelphia,47,15
+98,Philadelphia,41,15
+99,Philadelphia,72,39
+100,Philadelphia,83,58
