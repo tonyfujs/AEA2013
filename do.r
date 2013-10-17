@@ -7,15 +7,7 @@
 ################################################################################
 #######     Set up libraries, default options & custom functions         #######
 ################################################################################
-# Load libraries
-library(reshape2)
-library(ggplot2)
-library(plyr)
-library(pander)
-# Set up default options
-options(stringsAsFactors = FALSE)
-# Import custom functions
-source('./scripts/functions.r')
+source('./scripts/profile.r')
 
 
 ################################################################################
@@ -33,19 +25,22 @@ source('./scripts/clean.r')
 ################################################################################
 #######                            Analyze data                          #######
 ################################################################################
-source('./scripts/analysis.r')
+### Create a summary table
+source('./scripts/table.r')
+
+### Create a dynamic paragraph
+source('./scripts/paragraph.r')
+
+### Create some charts
+source('./scripts/charts.r')
+
+
+### Save created objects
+#save.image(file = "./output/savedObjects.RData")
 
 ################################################################################
 #######                      Publish your results                        #######
 ################################################################################
-# TO DO: FIGURE WORKING DIRECTORY ISSUE + SLIDE GENERATION WITHOUT EDITING
-
-# Generate a markdown document
-#Pandoc.brew('./scripts/report.brew', output = './output/reports/tempfile')
-
-# Publish your results as a pdf document
-#system("pandoc -s ./output/reports/tempfile -t latex -o ./output/reports/tempfile.pdf")
-
 # Publish your results as a pdf document
 Pandoc.brew('./scripts/report.brew', output = 'tempfile', convert = 'pdf')
 
@@ -53,18 +48,44 @@ Pandoc.brew('./scripts/report.brew', output = 'tempfile', convert = 'pdf')
 Pandoc.brew('./scripts/report.brew', output = 'tempfile', convert = 'docx')
 
 # Publish your results as a webpage document
-#Pandoc.brew('./scripts/report.brew', output = './output/tempfile', convert = 'html')
+Pandoc.brew('./scripts/report.brew', output = 'tempfile', convert = 'html')
 
-# Publish your results as a webpage document
-Pandoc.brew('./scripts/report.brew', output = './output/reports/tempfile')
 # CAUTION: "tempfile" NEEDS EDITING BEFORE TRANSFORMING INTO SLIDES FORMAT
-system("pandoc -s -S -i -t dzslides --mathjax ./output/reports/tempfile -o ./output/reports/tempfileWEB.html")
+#system("pandoc -s -S -i -t dzslides --mathjax ./output/reports/tempfile -o ./output/reports/tempfileWEB.html")
 
-# # Slides----
-# library(reports)
-# #Pandoc.brew('./scripts/report.brew', output = 'data.md', convert = FALSE)
-# reveal.js(in.file = 'smallData.md', theme = "beige", transition = "cube",
-#           path = file.path(getwd()), figure.dir = "plots" )
-# #Pandoc.brew('./scripts/report.brew', output = 'smallData.md', convert = FALSE)
-# # reveal.js(in.file = 'data.md', theme = "beige", transition = "cube",
-# #           path = file.path(getwd()), figure.dir = "plots" )
+# Slides----
+#library(reports)
+#Pandoc.brew('./scripts/report.brew', output = 'data.md', convert = FALSE)
+#reveal.js(in.file = 'smallData.md', theme = "beige", transition = "cube",
+#          path = file.path(getwd()), figure.dir = "plots" )
+#Pandoc.brew('./scripts/report.brew', output = 'smallData.md', convert = FALSE)
+#reveal.js(in.file = 'data.md', theme = "beige", transition = "cube", path = file.path(getwd()), figure.dir = "plots" )
+
+#author("mydeck")
+
+### Save created objects
+#save.image(file = "./output/workspaceSlides.RData")
+#setwd('./mydeck')
+
+#slidify("index.Rmd")
+
+
+
+################################################################################
+#######                      Publish your results (SHINY)                #######
+################################################################################
+
+### Run shiny app interactively
+runApp("./shinyapp")
+
+### Run shiny app via system()
+#system("R -e shiny::runApp('./shinyapp')")
+
+
+
+
+
+
+
+
+

@@ -28,7 +28,7 @@ summaryTable[row.names(summaryTable) == v, 1:3]
 
 ### Data visualization
 <%=
-barPlotEList[[v]]
+distPlotList[[v]]
 %>
 
 \pagebreak
